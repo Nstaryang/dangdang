@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="login"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <a href="logo">
+                <img src="https://login.dangdang.com/images/logo.png" alt="当当">
+            </a>
+        </div>
+    </header>
+
+    <div class="login-page">
+        <div class="login-box">
+            <h3>密码登录</h3>
+            <form action="javascript:;" method="post" autocomplete="off">
+                <p>
+                    <label for="">
+                        <span class="iconfont icon-yonghu"></span>
+                    </label>
+                    <input type="text" name='username' id="username">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="">
+                        <span class="iconfont icon-mima"></span>
+                    </label>
+                    <input type="password" name="password" id="password">
+                    <span></span>
+                </p>
+                <p>
+                    <input type="checkbox" name="" id="autologin">
+                    <em>七天自动登录</em>
+                    <a href="#">忘记密码?</a>
+                </p>
+                <button name="submit" id="submit">登录</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

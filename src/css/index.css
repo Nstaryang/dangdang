@@ -1,0 +1,835 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+header {
+  width: 100%;
+  height: 180px;
+  border-bottom: 4px solid #ff2832;
+}
+
+.login-wrap {
+  width: 100%;
+  height: 36px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.login-bar {
+  width: 1216px;
+  height: 100%;
+  margin: 0 auto;
+}
+.login-bar .user-address {
+  height: 100%;
+  line-height: 36px;
+  font-size: 12px;
+  text-indent: 10px;
+}
+.login-bar .login-list {
+  height: 100%;
+}
+.login-bar .login-list li {
+  padding: 0 7px;
+  float: left;
+  font-size: 12px;
+  line-height: 36px;
+  background: url(../images/login-bar-bg.jpg) no-repeat right center;
+}
+.login-bar .login-list li:nth-last-of-type(1) {
+  background: none;
+}
+.login-bar .login-list .befor a:nth-of-type(1) {
+  color: #ff2832;
+}
+.login-bar .login-list .after {
+  color: #ff2832;
+  display: none;
+}
+.login-bar .login-list .after a {
+  font-size: 12px;
+  color: #646464;
+}
+.login-bar .login-list a {
+  height: 100%;
+  width: 100%;
+}
+.login-bar .login-list a:hover {
+  color: #ff2832;
+}
+
+.search-bar {
+  width: 1216px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 194px;
+  height: 56px;
+  margin-top: 22px;
+  background: url(../images/logo.jpg) no-repeat center;
+  background-size: 100% 100%;
+  text-indent: -999em;
+}
+
+.search {
+  height: 62px;
+  margin-top: 19px;
+  margin-left: 169px;
+}
+
+.search-box {
+  width: 572px;
+  height: 42px;
+  border: 2px solid #ff2832;
+}
+.search-box input {
+  width: 411px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.search-box em {
+  width: 106px;
+  height: 38px;
+  display: block;
+  font-size: 18px;
+  color: #c0c0c0;
+  line-height: 38px;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+}
+.search-box em div {
+  width: 106px;
+  height: 286px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 38px;
+  z-index: 2;
+  display: none;
+  overflow: auto;
+}
+.search-box em a {
+  display: block;
+  height: 24px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 24px;
+  color: #646464;
+}
+.search-box em a:hover {
+  color: #ff2832;
+}
+.search-box em:hover div {
+  display: block;
+}
+.search-box > span {
+  width: 51px;
+  height: 38px;
+  display: block;
+  background-color: #ff2832;
+  line-height: 38px;
+  text-align: center;
+}
+
+.hot {
+  height: 20px;
+  width: 100%;
+  padding-top: 7px;
+  color: #969696;
+}
+.hot em {
+  font-weight: normal;
+}
+.hot a {
+  margin: 0 7px;
+  font-size: 12px;
+  color: #969696;
+}
+.hot a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.cart-box {
+  width: 202px;
+  height: 42px;
+  border: 2px solid #d9d9d9;
+  margin-top: 19px;
+}
+
+.shopping-car {
+  display: block;
+  width: 115px;
+  height: 42px;
+  background-color: #ff2832;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+.shopping-car:hover {
+  background-color: #f6f6f6;
+  color: #ff2832;
+  height: 38px;
+  width: 113px;
+  line-height: 38px;
+  margin: 0;
+  border-right: 2px solid #d9d9d9;
+}
+
+.order {
+  display: block;
+  background-color: #f6f6f6;
+  width: 85px;
+  height: 38px;
+  line-height: 42px;
+  text-align: center;
+}
+.order:hover {
+  color: #ff2832;
+}
+
+.nav-bar {
+  height: 41px;
+  width: 1216px;
+  margin: 0 auto;
+}
+.nav-bar nav li {
+  float: left;
+  margin-left: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
+  position: relative;
+}
+.nav-bar nav li:hover a {
+  color: #ff2832;
+}
+.nav-bar .icon {
+  position: absolute;
+  top: -12px;
+  left: -5px;
+}
+
+.dropbutton {
+  width: 203px;
+  height: 100%;
+  background-color: #ff2832;
+  font-size: 16px;
+  color: #fff;
+  line-height: 41px;
+  text-indent: 21px;
+  position: relative;
+  z-index: 10;
+}
+.dropbutton:hover .dropmenu {
+  display: block;
+}
+.dropbutton .dropmenu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 41px;
+  background-color: #eee;
+  z-index: 1;
+  color: #666;
+  display: none;
+}
+.dropbutton .dropmenu li {
+  box-sizing: content-box;
+  width: 203px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.dropbutton .dropmenu .active {
+  width: 204px;
+  color: #ff2832;
+  line-height: 26px;
+  border: 2px solid #ff2832;
+  border-right: none;
+}
+.dropbutton .dropmenu .menulist {
+  height: 100%;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 203px;
+  background-color: #fff;
+  display: none;
+  border: 2px solid #ff2832;
+}
+.dropbutton .dropmenu .items {
+  display: none;
+  font-size: 20px;
+}
+.dropbutton .dropmenu .items a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.menu {
+  width: 100%;
+  height: 30px;
+  background-color: #f5f5f5;
+}
+.menu nav {
+  width: 1216px;
+  height: 100%;
+  margin: 0 auto;
+}
+.menu nav li {
+  float: left;
+  padding: 0 15px;
+  font-size: 12px;
+  height: 100%;
+  line-height: 30px;
+  background: url(../images/submeun-bg.jpg) no-repeat right center;
+}
+.menu nav a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.ad {
+  width: 1216px;
+  height: 66px;
+  margin: 15px auto 10px;
+}
+.ad img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.aside-menu {
+  width: 192px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 3;
+}
+.aside-menu h3 {
+  height: 35px;
+  width: 100%;
+  background-color: #487a6f;
+  text-align: center;
+  line-height: 33px;
+  border-radius: 5px;
+  border-bottom: 2px dashed #487a6f;
+  color: #fff;
+  background-clip: content-box;
+}
+.aside-menu .relative {
+  position: relative;
+}
+.aside-menu ul {
+  width: 100%;
+  border: 1px solid #487a6f;
+  border-top: none;
+}
+.aside-menu li {
+  padding: 1px 0;
+}
+.aside-menu li .levelone {
+  width: 172px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #849555;
+}
+.aside-menu li .levelone:nth-last-of-type(1) {
+  border: none;
+}
+.aside-menu li .submenu {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  left: 192px;
+  background-color: #fff;
+  display: none;
+  z-index: 3;
+  font-size: 24px;
+  text-indent: 2em;
+}
+.aside-menu li:hover {
+  width: 191px;
+  padding: 2px 1px 1px 0;
+  border-top: 1px solid #849555;
+  border-bottom: 1px solid #849555;
+  margin-top: -2px;
+  background-color: #fff;
+}
+.aside-menu li:hover .levelone {
+  border: none;
+}
+.aside-menu li:hover .submenu {
+  display: block;
+}
+.aside-menu li a:hover {
+  color: #ec7814;
+  text-decoration: underline;
+}
+.aside-menu li .clear-uline:hover {
+  text-decoration: none;
+}
+.aside-menu .caption {
+  font-size: 14px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #5e8a80;
+}
+.aside-menu .book-kind {
+  display: inline-block;
+  padding: 0 5px 0 2px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  background: url(../images/book-kind-bg.jpg) no-repeat right center;
+}
+.aside-menu .clear-lp {
+  padding-left: 0;
+}
+
+.mid-content {
+  width: 781px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  /* width: 758px; */
+  width: 100%;
+  height: 315px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 8px;
+}
+.banner ul {
+  width: 100%;
+  height: 100%;
+}
+.banner ul li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.banner ul .show-img {
+  display: block;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.banner ol {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.banner ol li {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  text-indent: -999em;
+}
+.banner ol .active {
+  background-color: #ff4848;
+}
+
+.book-online h3 {
+  width: 100%;
+  height: 39px;
+  background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/new_book.png) no-repeat left top;
+  background-size: 100% 100%;
+  text-indent: -999em;
+}
+
+.roll-box {
+  width: 100%;
+  height: 544px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+.roll-box ul {
+  width: 3805px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.roll-box ul li {
+  width: 761px;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.roll-box ol {
+  width: 101px;
+  position: absolute;
+  left: 330px;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.roll-box ol li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.roll-box .book-active {
+  background-color: #558c83;
+}
+
+.online_list div {
+  width: 150px;
+  height: 240px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.online_list div img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.online_list div p {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.online_list div .title {
+  padding: 0 20px;
+  overflow: hidden;
+  text-align: left;
+}
+.online_list div .title a:hover {
+  color: #ec7814;
+}
+.online_list div .author {
+  padding: 0 20px;
+  text-align: left;
+  color: #aaa;
+}
+.online_list div .price {
+  padding-left: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+.online_list div .price .curr {
+  margin-right: 12px;
+  color: #c30;
+}
+.online_list div .price .pre {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.btn-pre,
+.btn-next {
+  width: 25px;
+  height: 49px;
+  position: absolute;
+  top: 252px;
+  background-color: red;
+}
+.btn-pre:hover,
+.btn-next:hover {
+  background-position-y: -51px;
+}
+
+.btn-pre {
+  left: 0;
+  background: url(http://img4.ddimg.cn/00363/book_index/book_fanye_btn.png) no-repeat 0 0;
+}
+
+.btn-next {
+  right: 0;
+  background: url(http://img4.ddimg.cn/00363/book_index/book_fanye_btn.png) no-repeat right 0;
+}
+
+.right-content {
+  width: 243px;
+  height: 800px;
+}
+
+.news {
+  width: 243px;
+  height: 112px;
+  padding: 6px 10px;
+  border: 1px solid #eaeaea;
+}
+.news h3 {
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.news li {
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+  text-indent: 10px;
+  background: url(../images/dot.jpg) no-repeat left center;
+}
+.news li a:hover {
+  color: #ec7814;
+  text-decoration: underline;
+}
+
+.newbook {
+  width: 242px;
+  height: 197px;
+  border: 1px solid #eaeaea;
+  margin: 10px 0;
+  padding: 6px 0;
+}
+.newbook h3 {
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.newbook h3 a {
+  font-size: 12px;
+  float: right;
+  color: #589bbf;
+}
+.newbook h3 a:hover {
+  text-decoration: underline;
+}
+.newbook .btn-pre,
+.newbook .btn-next {
+  top: 64px;
+}
+
+.roll-box2 {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+.roll-box2 ul {
+  width: 1452px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.roll-box2 ul li {
+  width: 240px;
+  height: 100%;
+  float: left;
+}
+.roll-box2 ol {
+  width: 100px;
+  position: absolute;
+  left: 70px;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.roll-box2 ol li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.roll-box2 .book-active {
+  background-color: #558c83;
+}
+
+.hotrank {
+  width: 100%;
+  height: 576px;
+}
+.hotrank h3 {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 30px;
+  font-size: 16px;
+  background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/sprite.png) no-repeat 5px 5px;
+}
+.hotrank h3 a {
+  color: #ff2832;
+}
+.hotrank ol {
+  width: 100%;
+  height: 26px;
+  border: 1px solid #eaeaea;
+}
+.hotrank ol li {
+  box-sizing: content-box;
+  float: left;
+  width: 47px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #eaeaea;
+  border-left: 0;
+  padding: 2px 0 1px;
+  color: #000;
+  cursor: pointer;
+}
+.hotrank ul {
+  width: 100%;
+  height: 510px;
+}
+.hotrank ul li {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  background-color: #666;
+  text-align: center;
+  line-height: 200px;
+  display: none;
+}
+.hotrank .active {
+  border-top: 3px solid #487a6f;
+  color: #487a6f;
+  margin-top: -1px;
+  padding-top: 1px;
+  border-bottom: none;
+}
+
+.book_tegong {
+  width: 960px;
+  height: 584px;
+  background-color: aqua;
+}
+.book_tegong header {
+  width: 100%;
+  height: 51px;
+  border-bottom: 1px solid #487a6f;
+}
+.book_tegong header ul {
+  float: right;
+  margin-top: 17px;
+  margin-right: 10px;
+}
+.book_tegong header li {
+  padding: 2px 17px 0;
+  height: 32px;
+  line-height: 32px;
+  float: left;
+  color: #666;
+  font-size: 14px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.book_tegong header .active {
+  box-sizing: content-box;
+  background: #fff;
+  border-radius: 6px 6px 0 0;
+  border: 2px solid #487a6f;
+  border-bottom: none;
+  color: #4e8176;
+  padding: 0 15px;
+  font-weight: bold;
+}
+.book_tegong h3 {
+  width: 108px;
+  height: 51px;
+  background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/title_sprite.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.book_tegong .tab-content {
+  width: 960px;
+  height: 533px;
+}
+.book_tegong .tab-content li {
+  width: 100%;
+  height: 100%;
+  line-height: 533px;
+  text-align: center;
+  font-size: 100px;
+  background-color: #666;
+  display: none;
+}
+
+.sell_rank {
+  width: 240px;
+  height: 605px;
+  background-color: pink;
+  padding-top: 10px;
+}
+.sell_rank h3 {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 30px;
+  font-size: 16px;
+  background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/sprite.png) no-repeat 5px 5px;
+}
+.sell_rank .tab-box {
+  box-sizing: content-box;
+  width: 100%;
+  height: 535px;
+  border: 1px solid #eaeaea;
+}
+.sell_rank .tab-aa {
+  width: 100%;
+  height: 25px;
+}
+.sell_rank .tab-aa li {
+  box-sizing: content-box;
+  float: left;
+  width: 47px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #eaeaea;
+  border-left: 0;
+  padding: 2px 0 1px;
+  color: #000;
+  cursor: pointer;
+}
+.sell_rank .tab-aa .active {
+  border-top: 3px solid #487a6f;
+  color: #487a6f;
+  margin-top: -1px;
+  padding-top: 1px;
+  border-bottom: none;
+}
+.sell_rank .tab-content {
+  width: 100%;
+  height: 510px;
+}
+.sell_rank .tab-content li {
+  width: 100%;
+  height: 100%;
+  line-height: 300px;
+  text-align: center;
+  font-size: 100px;
+  background-color: #666;
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */

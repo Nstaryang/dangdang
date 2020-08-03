@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="registry"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/registry.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>当当</h1>
+            <nav>
+                <li>
+                    <a href="#">购物车</a>
+                </li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <li>
+                    <a href="#">我的当当</a>
+                </li>
+                <li>
+                    <a href="#">礼品卡</a>
+                </li>
+                <li>
+                    <a href="#">手机当当</a>
+                </li>
+                <li>
+                    <a href="#">企业销售</a>
+                </li>
+                <li>
+                    <a href="#">帮助</a>
+                </li>
+                <p>欢迎光临当当网，请<a href="#">登录</a> <a href="#">免费注册</a></p>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-box">
+            <div class="head-bar">
+                <span>新用户注册</span>
+                <p>
+                    <a href="#">当当首页</a>
+                    <a href="#">注册帮助</a>
+                </p>
+            </div>
+            <!-- <form action="http://localhost/dangdang/php/registry.php" method="post" name="form" autocomplete="off"> -->
+            <form action="http://10.31.163.10/dangdang/php/registry.php" method="post" name="form" autocomplete="off">
+                <p>
+                    <label for="phone">手机号码</label>
+                    <input type="text" name="phone" id="phone" placeholder="请输入您的手机号码">
+                    <em></em>
+                    <span></span>
+                </p>
+                <p>
+                    <label for="password">登录密码</label>
+                    <input type="text" name="password" id="password">
+                    <em></em>
+                    <span></span>
+                    <strong class="passlevel">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <em>密码强度弱</em>
+                    </strong>
+                </p>
+                <p>
+                    <label for="repass">确认密码</label>
+                    <input type="text" name="repass" id="repass">
+                    <em></em>
+                    <span></span>
+                </p>
+                <p>
+                    <label for="yzm">验证码</label>
+                    <input type="text" name="yzm" id="yzm" placeholder="请输入验证码">
+                    <i class="yzmpic"></i>
+                    <a href="#" class="changepic">换张图</a>
+                    <em class="icon-judge"></em>
+                    <span></span>
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="checkbox" name="" id="protocol" checked>我已阅读并同意 <a href="#">《当当交易条款》</a> <a href="#">《当当社区条款》</a> 和 <a href="#">《当当隐私政策》</a>
+                    <span></span>
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="submit" value="立即注册" name='submit' id='submit'>
+                </p>
+            </form>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

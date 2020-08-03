@@ -1,0 +1,306 @@
+.unselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.details {
+    width: 1216px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.picinfo {
+    width: 320px;
+    float: left;
+}
+
+.picbox {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.sf {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(255, 255, 255, 0.7);
+    /* background-color: yellowgreen; */
+    visibility: hidden;
+    cursor: move;
+}
+
+.spic {
+    width: 100%;
+    height: 100%;
+}
+
+.bf {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    left: 320px;
+    top: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    visibility: hidden;
+}
+
+.bpic {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.roll {
+    width: 320px;
+    height: 56px;
+    margin-top: 10px;
+}
+
+.btn-pre,
+.btn-next {
+    display: block;
+    float: left;
+    width: 12px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+    color: #000;
+    background-color: #eee;
+}
+
+.roll a:hover {
+    color: #fa5000;
+}
+
+.roll-box {
+    width: 296px;
+    height: 56px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.roll-box ul {
+    width: 560px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.roll-box li {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.roll-box li img {
+    width: 54px;
+    height: 54px;
+}
+
+.showinfo {
+    width: 860px;
+    float: right;
+    margin-bottom: 50px;
+}
+
+.showinfo h1 {
+    width: 100%;
+    height: 24px;
+    background: url(http://product.dangdang.com/images/icon_ddzy.png) no-repeat 0 center;
+    text-indent: 70px;
+    font-size: 18px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.showinfo .intro {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.showinfo a {
+    color: #1a66b3;
+}
+
+.showinfo .intro a:hover {
+    color: #1a66b3;
+    text-decoration: underline;
+}
+
+.printinfo {
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.printinfo span {
+    margin-right: 25px;
+}
+
+.priceinfo {
+    width: 100%;
+    height: 143px;
+    background-color: #fcfaf7;
+    padding-left: 10px;
+}
+
+.priceinfo .price {
+    width: 206px;
+    float: left;
+}
+
+.priceinfo .mess {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.priceinfo .mess span {
+    margin-right: 10px;
+}
+
+.priceinfo .nowprice {
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    color: #fa5000;
+}
+
+.priceinfo .nowprice span {
+    font-size: 26px;
+}
+
+.priceinfo .preprice {
+    height: 33px;
+    margin-top: 10px;
+    line-height: 33px;
+    color: #969696;
+}
+
+.priceinfo .preprice span {
+    text-decoration: line-through;
+}
+
+.priceinfo .ad {
+    width: 270px;
+    height: 100%;
+    float: right;
+    margin: 0;
+    background: url(https://img60.ddimg.cn/assets/pc_image/minaAttract-product-price.gif) no-repeat 0 0;
+    background-size: contain;
+    text-align: right;
+}
+
+.priceinfo .ad img {
+    height: 100%;
+    width: auto;
+}
+
+.address i {
+    display: inline-block;
+    width: 68px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align-last: left;
+}
+
+.address span {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+.sever i {
+    display: inline-block;
+    width: 68px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align-last: left;
+}
+
+.sever span {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    ;
+}
+
+.buy-box {
+    height: 104px;
+    width: 100%;
+    padding: 35px 0;
+}
+
+.buy-box #buy-num {
+    height: 100%;
+    width: 38px;
+    float: left;
+    border: 1px solid #eee;
+    color: #969696;
+    text-align: center;
+}
+
+.buy-box .operate {
+    width: 20px;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buy-box .operate span {
+    height: 16px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 16px;
+    background-color: #999;
+    cursor: pointer;
+}
+
+.buy-box .jioncart {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 136px;
+    margin-left: 15px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff2832;
+    border-radius: 5px;
+}
+
+.buy-box .buy {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 96px;
+    margin-left: 15px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    color: #ff2832;
+    border: 1px solid #ff2832;
+    background-color: #ffedee;
+    border-radius: 5px;
+}

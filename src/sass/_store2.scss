@@ -1,0 +1,113 @@
+@charset "utf-8";
+// 独家特供
+.book_tegong {
+    width: 960px;
+    height: 584px;
+    background-color: aqua;
+    header {
+        width: 100%;
+        height: 51px;
+        border-bottom: 1px solid #487a6f;
+        ul {
+            float: right;
+            margin-top: 17px;
+            margin-right: 10px;
+        }
+        li {
+            padding: 2px 17px 0;
+            height: 32px;
+            line-height: 32px;
+            float: left;
+            color: #666;
+            font-size: 14px;
+            margin-right: 4px;
+            cursor: pointer;
+        }
+        .active {
+            box-sizing: content-box;
+            background: #fff;
+            border-radius: 6px 6px 0 0;
+            border: 2px solid #487a6f;
+            border-bottom: none;
+            color: #4e8176;
+            padding: 0 15px;
+            font-weight: bold;
+        }
+    }
+    h3 {
+        width: 108px;
+        height: 51px;
+        background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/title_sprite.png) 0 0 no-repeat;
+        text-indent: -999em;
+    }
+    .tab-content {
+        width: 960px;
+        height: 533px;
+        li {
+            width: 100%;
+            height: 100%;
+            line-height: 533px;
+            text-align: center;
+            font-size: 100px;
+            background-color: #666;
+            display: none;
+        }
+    }
+}
+
+.sell_rank {
+    width: 240px;
+    height: 605px;
+    background-color: pink;
+    padding-top: 10px;
+    h3 {
+        height: 40px;
+        line-height: 40px;
+        text-indent: 30px;
+        font-size: 16px;
+        background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/sprite.png) no-repeat 5px 5px;
+    }
+    .tab-box {
+        box-sizing: content-box;
+        width: 100%;
+        height: 535px;
+        border: 1px solid #eaeaea;
+    }
+    .tab-aa {
+        width: 100%;
+        height: 25px;
+        li {
+            box-sizing: content-box;
+            float: left;
+            width: 47px;
+            text-align: center;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid #eaeaea;
+            border-left: 0;
+            padding: 2px 0 1px;
+            color: #000;
+            cursor: pointer;
+        }
+        .active {
+            border-top: 3px solid #487a6f;
+            color: #487a6f;
+            margin-top: -1px;
+            padding-top: 1px;
+            border-bottom: none;
+        }
+    }
+    .tab-content {
+        width: 100%;
+        height: 510px;
+        li {
+            width: 100%;
+            height: 100%;
+            line-height: 300px;
+            text-align: center;
+            font-size: 100px;
+            background-color: #666;
+            display: none;
+        }
+    }
+}

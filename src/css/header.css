@@ -1,0 +1,318 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+header {
+  width: 100%;
+  height: 180px;
+  border-bottom: 4px solid #ff2832;
+}
+
+.login-wrap {
+  width: 100%;
+  height: 36px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.login-bar {
+  width: 1216px;
+  height: 100%;
+  margin: 0 auto;
+}
+.login-bar .user-address {
+  height: 100%;
+  line-height: 36px;
+  font-size: 12px;
+  text-indent: 10px;
+}
+.login-bar .login-list {
+  height: 100%;
+}
+.login-bar .login-list li {
+  padding: 0 7px;
+  float: left;
+  font-size: 12px;
+  line-height: 36px;
+  background: url(../images/login-bar-bg.jpg) no-repeat right center;
+}
+.login-bar .login-list li:nth-last-of-type(1) {
+  background: none;
+}
+.login-bar .login-list .befor a:nth-of-type(1) {
+  color: #ff2832;
+}
+.login-bar .login-list .after {
+  color: #ff2832;
+  display: none;
+}
+.login-bar .login-list .after a {
+  font-size: 12px;
+  color: #646464;
+}
+.login-bar .login-list a {
+  height: 100%;
+  width: 100%;
+}
+.login-bar .login-list a:hover {
+  color: #ff2832;
+}
+
+.search-bar {
+  width: 1216px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 194px;
+  height: 56px;
+  margin-top: 22px;
+  background: url(../images/logo.jpg) no-repeat center;
+  background-size: 100% 100%;
+  text-indent: -999em;
+}
+
+.search {
+  height: 62px;
+  margin-top: 19px;
+  margin-left: 169px;
+}
+
+.search-box {
+  width: 572px;
+  height: 42px;
+  border: 2px solid #ff2832;
+}
+.search-box input {
+  width: 411px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.search-box em {
+  width: 106px;
+  height: 38px;
+  display: block;
+  font-size: 18px;
+  color: #c0c0c0;
+  line-height: 38px;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+}
+.search-box em div {
+  width: 106px;
+  height: 286px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 38px;
+  z-index: 2;
+  display: none;
+  overflow: auto;
+}
+.search-box em a {
+  display: block;
+  height: 24px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 24px;
+  color: #646464;
+}
+.search-box em a:hover {
+  color: #ff2832;
+}
+.search-box em:hover div {
+  display: block;
+}
+.search-box > span {
+  width: 51px;
+  height: 38px;
+  display: block;
+  background-color: #ff2832;
+  line-height: 38px;
+  text-align: center;
+}
+
+.hot {
+  height: 20px;
+  width: 100%;
+  padding-top: 7px;
+  color: #969696;
+}
+.hot em {
+  font-weight: normal;
+}
+.hot a {
+  margin: 0 7px;
+  font-size: 12px;
+  color: #969696;
+}
+.hot a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.cart-box {
+  width: 202px;
+  height: 42px;
+  border: 2px solid #d9d9d9;
+  margin-top: 19px;
+}
+
+.shopping-car {
+  display: block;
+  width: 115px;
+  height: 42px;
+  background-color: #ff2832;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+.shopping-car:hover {
+  background-color: #f6f6f6;
+  color: #ff2832;
+  height: 38px;
+  width: 113px;
+  line-height: 38px;
+  margin: 0;
+  border-right: 2px solid #d9d9d9;
+}
+
+.order {
+  display: block;
+  background-color: #f6f6f6;
+  width: 85px;
+  height: 38px;
+  line-height: 42px;
+  text-align: center;
+}
+.order:hover {
+  color: #ff2832;
+}
+
+.nav-bar {
+  height: 41px;
+  width: 1216px;
+  margin: 0 auto;
+}
+.nav-bar nav li {
+  float: left;
+  margin-left: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
+  position: relative;
+}
+.nav-bar nav li:hover a {
+  color: #ff2832;
+}
+.nav-bar .icon {
+  position: absolute;
+  top: -12px;
+  left: -5px;
+}
+
+.dropbutton {
+  width: 203px;
+  height: 100%;
+  background-color: #ff2832;
+  font-size: 16px;
+  color: #fff;
+  line-height: 41px;
+  text-indent: 21px;
+  position: relative;
+  z-index: 10;
+}
+.dropbutton:hover .dropmenu {
+  display: block;
+}
+.dropbutton .dropmenu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 41px;
+  background-color: #eee;
+  z-index: 1;
+  color: #666;
+  display: none;
+}
+.dropbutton .dropmenu li {
+  box-sizing: content-box;
+  width: 203px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.dropbutton .dropmenu .active {
+  width: 204px;
+  color: #ff2832;
+  line-height: 26px;
+  border: 2px solid #ff2832;
+  border-right: none;
+}
+.dropbutton .dropmenu .menulist {
+  height: 100%;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 203px;
+  background-color: #fff;
+  display: none;
+  border: 2px solid #ff2832;
+}
+.dropbutton .dropmenu .items {
+  display: none;
+  font-size: 20px;
+}
+.dropbutton .dropmenu .items a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.menu {
+  width: 100%;
+  height: 30px;
+  background-color: #f5f5f5;
+}
+.menu nav {
+  width: 1216px;
+  height: 100%;
+  margin: 0 auto;
+}
+.menu nav li {
+  float: left;
+  padding: 0 15px;
+  font-size: 12px;
+  height: 100%;
+  line-height: 30px;
+  background: url(../images/submeun-bg.jpg) no-repeat right center;
+}
+.menu nav a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.ad {
+  width: 1216px;
+  height: 66px;
+  margin: 15px auto 10px;
+}
+.ad img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=header.css.map */

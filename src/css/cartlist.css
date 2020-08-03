@@ -1,0 +1,401 @@
+header {
+    width: 100%;
+    height: 34px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 34px;
+}
+
+.wrap {
+    width: 1216px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.login {
+    padding: 5px 0 0 10px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+}
+
+.befor a:nth-of-type(1) {
+    color: #ff2832;
+}
+
+.after {
+    color: #ff2832;
+    display: none;
+}
+
+.after a {
+    font-size: 12px;
+    color: #646464;
+}
+
+.login a:hover {
+    color: #ff2832;
+}
+
+.nav {
+    height: 34px;
+    line-height: 34px;
+    float: right;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li:nth-of-type(1) span {
+    color: #ff2832;
+}
+
+.nav li a {
+    padding: 0 7px;
+    border-right: 1px solid #ccc;
+}
+
+.nav li a:hover {
+    color: #ff2832;
+}
+
+.ad {
+    width: 1216px;
+    height: 77px;
+    padding-top: 17px;
+    margin: 0 auto;
+}
+
+.ad img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrap {
+    width: 100%;
+    height: 100px;
+    border-bottom: 4px solid #ff2832;
+}
+
+.logo-bar {
+    width: 1216px;
+    height: 100px;
+    /* background-color: pink; */
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.logo {
+    display: block;
+    width: 250px;
+    height: 49px;
+    float: left;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.state {
+    float: right;
+    width: 634px;
+    height: 36px;
+    background: url(http://shopping.dangdang.com/shoppingcart/images/procedure_bg.png) 0 0 no-repeat;
+    font: bold 14px/36px "Microsoft Yahei";
+    color: #646464;
+    margin: 20px 50px 0 0;
+}
+
+.state span {
+    display: inline-block;
+    width: 206px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.current {
+    color: #fff;
+}
+
+.cart {
+    width: 1216px;
+    margin: 0 auto;
+}
+
+.empty {
+    width: 100%;
+    height: 280px;
+    background: url(http://shopping.dangdang.com/shoppingcart/images/empty.png) no-repeat 90px 46px;
+}
+
+.empty div {
+    height: 190px;
+    width: 400px;
+    float: right;
+    margin: 90px 200px 0 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8a8888;
+}
+
+.empty a {
+    display: block;
+    width: 116px;
+    height: 38px;
+    background-color: #ff2832;
+    color: #fff;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    margin: 30px 20px 0 0;
+    border-radius: 5px;
+}
+
+.shopping-wrap {
+    width: 100%;
+    display: none;
+}
+
+.shopping-title {
+    height: 36px;
+    width: 100%;
+    line-height: 36px;
+    margin-top: 10px;
+}
+
+.shopping-title li {
+    float: left;
+    text-align: center;
+    color: #969696;
+}
+
+.shopping-title .f1 {
+    text-align: left;
+    width: 202px;
+}
+
+.shopping-title .f2 {
+    text-align: left;
+    width: 280px;
+}
+
+.shopping-title .f3 {
+    width: 202px;
+}
+
+.shopping-title .f4 {
+    width: 170px;
+}
+
+.shopping-title .f5 {
+    width: 130px;
+}
+
+.shopping-list {}
+
+.shopping-list table {
+    width: 100%;
+    border: none;
+    color: #969696;
+    background-color: #fafafa;
+}
+
+.shopping-list tr {
+    height: 120px;
+    border-bottom: 1px solid #eee;
+    color: #969696;
+}
+
+.shopping-list td {
+    height: 120px;
+}
+
+.shopping-list .row1 {
+    width: 42px;
+    text-align: center;
+}
+
+.shopping-list .row_img {
+    width: 80px;
+    padding: 20px 0;
+}
+
+.shopping-list .row_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.shopping-list .row_name {
+    width: 330px;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.shopping-list .row_price {
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.shopping-list .row_num {
+    width: 180px;
+    text-align: center;
+}
+
+.shopping-list .row_num input {
+    width: 30px;
+    height: 28px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.shopping-list .row_num a {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    color: #323232;
+    background-color: #f4f4f4;
+    vertical-align: middle;
+    line-height: 28px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.shopping-list .row_num a:hover {
+    background-color: #fff5f5;
+}
+
+.shopping-list .row_sum {
+    width: 132px;
+    text-align: center;
+    padding: 20px;
+    color: #323232;
+    vertical-align: middle;
+}
+
+.shopping-list .row_del {
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.shopping-list .row_del a:hover {
+    text-decoration: underline;
+    color: #ff2832;
+}
+
+.shopping-list .del_box {
+    width: 200px;
+    height: 120px;
+    background: #fff url(http://shopping.dangdang.com/shoppingcart/images/pop_del_bg.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    text-align: center;
+}
+
+.shopping-list .del_box p {
+    font-size: 14px;
+    color: #323232;
+    line-height: 18px;
+    padding: 25px 0;
+}
+
+.shopping-list .del_box a {
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    margin: 5px 10px 0 0 !important;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.shopping-list .del_box a:hover {
+    color: #ff2832;
+}
+
+.shopping-total {
+    width: 1216px;
+    height: 72px;
+    margin: 20px 0;
+    background: url(http://shopping.dangdang.com/shoppingcart/images/shopping_total.png) no-repeat 0 center;
+    padding: 0 62px;
+}
+
+.total-left {
+    float: left;
+    line-height: 58px;
+    width: 430px;
+}
+
+.total-left #allselect {
+    width: 12px;
+    height: 12px;
+    /* vertical-align: middle; */
+}
+
+.total-left .del {
+    margin-left: 28px;
+}
+
+.total-left .del:hover {
+    text-decoration: underline;
+    color: #ff2832;
+}
+
+.total-left span {
+    margin-left: 80px;
+}
+
+.total-left span i {
+    color: #ff2832;
+}
+
+.total-right {
+    float: right;
+    margin: 18px 0 0;
+    width: 530px;
+}
+
+.total-right div {
+    float: right;
+}
+
+.total-right .total {
+    font-size: 12px;
+    float: left;
+    margin-right: 30px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.total-right .total span {
+    margin-left: 8px;
+    color: #ff2832;
+    font-size: 20px;
+}
+
+.total-right .buy {
+    display: block;
+    float: left;
+    width: 116px;
+    height: 38px;
+    background-color: #ff2832;
+    color: #fff;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 700;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 4px;
+}

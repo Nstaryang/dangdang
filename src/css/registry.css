@@ -1,0 +1,271 @@
+body {
+    background-color: #f6f9fb;
+}
+
+header {
+    width: 100%;
+    height: 95px;
+}
+
+.wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-top: 2px solid #e1e1e1;
+    border-bottom: 4px solid #f07700;
+}
+
+h1 {
+    height: 49px;
+    width: 171px;
+    margin-top: 23px;
+    background: url(../images/logo.jpg) no-repeat center;
+    background-size: contain;
+    text-indent: -999em;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    float: left;
+    background: url(../images/login-bar-bg.jpg) no-repeat right bottom;
+}
+
+nav li a {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    display: block;
+    padding: 0 10px;
+}
+
+nav li a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+header p {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+
+header p a {
+    color: #1a66b3;
+}
+
+header p a:hover {
+    color: #1a66b3;
+    text-decoration: underline;
+}
+
+
+/* 登录框 */
+
+main {
+    width: 1200px;
+    height: 730px;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+
+.login-box {
+    width: 1186px;
+    height: 716px;
+    float: right;
+    background-color: #fff;
+    box-shadow: -14px 14px 0 0 #ebeeef;
+    padding: 35px 12px;
+}
+
+.head-bar {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #eceef2;
+}
+
+.head-bar span {
+    display: block;
+    float: left;
+    padding: 0 34px;
+    height: 60px;
+    margin-left: 34px;
+    border: 1px solid #eceef2;
+    border-bottom: none;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.head-bar p {
+    float: right;
+    margin-right: 34px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+}
+
+.head-bar p a {
+    margin-left: 18px;
+}
+
+.head-bar p a:hover {
+    color: #ff3c00;
+}
+
+.login-box form {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+.login-box form p {
+    height: 85px;
+    position: relative;
+}
+
+.login-box form label {
+    display: block;
+    width: 100px;
+    height: 100%;
+    line-height: 50px;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 13px;
+    float: left;
+    color: #646464;
+}
+
+.login-box form input {
+    height: 48px;
+    width: 390px;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+    float: left;
+    font-size: 14px;
+}
+
+.login-box form input::placeholder {
+    font-size: 14px;
+    color: #969696;
+}
+
+.login-box form #yzm {
+    width: 228px;
+}
+
+.login-box form #protocol {
+    height: 12px;
+    width: 12px;
+}
+
+.login-box form #submit {
+    width: 178px;
+    height: 44px;
+    margin-left: 50px;
+    border-radius: 22px;
+    background-color: #ff2832;
+    color: #fff;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-box form #submit:hover {
+    background-color: #f01923;
+}
+
+.login-box form>p span {
+    display: inline-block;
+    height: 37px;
+    width: 460px;
+    color: #646464;
+    /* display: none; */
+}
+
+.login-box form>p em {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.login-box form a {
+    color: #1a66b3;
+}
+
+.login-box form a:hover {
+    color: #1a66b3;
+    text-decoration: underline;
+}
+
+.login-box .passlevel {
+    display: inline-block;
+    height: 36px;
+    width: 500px;
+    display: none;
+}
+
+.login-box .passlevel i {
+    display: block;
+    float: left;
+    width: 22px;
+    height: 10px;
+    background-color: #d6d6d6;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-right: 3px;
+}
+
+.login-box .passlevel em {
+    height: 36px;
+    width: 240px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.icon-judge {
+    position: absolute;
+    left: 300px;
+    top: 4px;
+}
+
+.yzmpic {
+    display: inline-block;
+    height: 48px;
+    width: 80px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1666288423,1790665330&fm=26&gp=0.jpg) no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.changepic {
+    display: inline-block;
+    height: 48px;
+    width: 50px;
+    font-size: 14px;
+    line-height: 48px;
+    vertical-align: middle;
+    color: #1a66b3;
+}
+
+.changepic:hover {
+    color: #1a66b3;
+    text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import 'header';
+section {
+    width: 1216px;
+    margin: 0 auto;
+}
+
+@import 'store1';
+@import 'store2';

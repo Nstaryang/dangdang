@@ -1,0 +1,411 @@
+@charset "utf-8";
+$miancolor:#ff2832;
+// 左边部分
+.aside-menu {
+    width: 192px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 3;
+    h3 {
+        height: 35px;
+        width: 100%;
+        background-color: #487a6f;
+        text-align: center;
+        line-height: 33px;
+        border-radius: 5px;
+        border-bottom: 2px dashed #487a6f;
+        color: #fff;
+        background-clip: content-box;
+    }
+    .relative {
+        position: relative;
+    }
+    ul {
+        width: 100%;
+        border: 1px solid #487a6f;
+        border-top: none;
+    }
+    li {
+        padding: 1px 0;
+        .levelone {
+            width: 172px;
+            margin: 0 auto;
+            border-bottom: 1px dashed #849555;
+            &:nth-last-of-type(1) {
+                border: none;
+            }
+        }
+        .submenu {
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            left: 192px;
+            background-color: #fff;
+            display: none;
+            z-index: 3;
+            font-size: 24px;
+            text-indent: 2em;
+        }
+        &:hover {
+            width: 191px;
+            padding: 2px 1px 1px 0;
+            border-top: 1px solid #849555;
+            border-bottom: 1px solid #849555;
+            margin-top: -2px;
+            background-color: #fff;
+            .levelone {
+                border: none;
+            }
+            .submenu {
+                display: block;
+            }
+        }
+        a:hover {
+            color: #ec7814;
+            text-decoration: underline;
+        }
+        .clear-uline:hover {
+            text-decoration: none;
+        }
+    }
+    .caption {
+        font-size: 14px;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #5e8a80;
+    }
+    .book-kind {
+        display: inline-block;
+        padding: 0 5px 0 2px;
+        height: 24px;
+        font-size: 12px;
+        line-height: 24px;
+        background: url(../images/book-kind-bg.jpg) no-repeat right center;
+    }
+    .clear-lp {
+        padding-left: 0;
+    }
+}
+
+// 中间部分
+.mid-content {
+    width: 781px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+// 轮播图
+.banner {
+    /* width: 758px; */
+    width: 100%;
+    height: 315px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+    ul {
+        width: 100%;
+        height: 100%;
+        li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+        .show-img {
+            display: block;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    ol {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        li {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            text-indent: -999em;
+        }
+        .active {
+            background-color: #ff4848;
+        }
+    }
+}
+
+// 新书上架
+.book-online {
+    h3 {
+        width: 100%;
+        height: 39px;
+        background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/new_book.png) no-repeat left top;
+        background-size: 100% 100%;
+        text-indent: -999em;
+    }
+}
+
+.roll-box {
+    width: 100%;
+    height: 544px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+    ul {
+        width: 3805px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        li {
+            width: 761px;
+            height: 100%;
+            float: left;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+    ol {
+        width: 101px;
+        position: absolute;
+        left: 330px;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        li {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+    }
+    .book-active {
+        background-color: #558c83;
+    }
+}
+
+.online_list {
+    div {
+        width: 150px;
+        height: 240px;
+        margin-right: 40px;
+        margin-bottom: 12px;
+        text-align: center;
+        img {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+        p {
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            font-size: 12px;
+        }
+        .title {
+            padding: 0 20px;
+            overflow: hidden;
+            text-align: left;
+        }
+        .title a:hover {
+            color: #ec7814;
+        }
+        .author {
+            padding: 0 20px;
+            text-align: left;
+            color: #aaa;
+        }
+        .price {
+            padding-left: 20px;
+            text-align: left;
+            font-size: 14px;
+            .curr {
+                margin-right: 12px;
+                color: #c30;
+            }
+            .pre {
+                color: #aaa;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.btn-pre,
+.btn-next {
+    width: 25px;
+    height: 49px;
+    position: absolute;
+    top: 252px;
+    background-color: red;
+    &:hover {
+        background-position-y: -51px;
+    }
+}
+
+.btn-pre {
+    left: 0;
+    background: url(http://img4.ddimg.cn/00363/book_index/book_fanye_btn.png) no-repeat 0 0;
+}
+
+.btn-next {
+    right: 0;
+    background: url(http://img4.ddimg.cn/00363/book_index/book_fanye_btn.png) no-repeat right 0;
+}
+
+// 右边内容
+.right-content {
+    width: 243px;
+    height: 800px;
+}
+
+.news {
+    width: 243px;
+    height: 112px;
+    padding: 6px 10px;
+    border: 1px solid #eaeaea;
+    h3 {
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    li {
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        text-indent: 10px;
+        background: url(../images/dot.jpg) no-repeat left center;
+        a:hover {
+            color: #ec7814;
+            text-decoration: underline;
+        }
+    }
+}
+
+// 新书预售
+.newbook {
+    width: 242px;
+    height: 197px;
+    border: 1px solid #eaeaea;
+    margin: 10px 0;
+    padding: 6px 0;
+    h3 {
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+        padding: 0 10px;
+        a {
+            font-size: 12px;
+            float: right;
+            color: #589bbf;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .btn-pre,
+    .btn-next {
+        top: 64px;
+    }
+}
+
+.roll-box2 {
+    width: 100%;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+    ul {
+        width: 1452px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        li {
+            width: 240px;
+            height: 100%;
+            float: left;
+        }
+    }
+    ol {
+        width: 100px;
+        position: absolute;
+        left: 70px;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        li {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+    }
+    .book-active {
+        background-color: #558c83;
+    }
+}
+
+// 新书热卖榜
+.hotrank {
+    width: 100%;
+    height: 576px;
+    h3 {
+        height: 40px;
+        line-height: 40px;
+        text-indent: 30px;
+        font-size: 16px;
+        background: url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/sprite.png) no-repeat 5px 5px;
+        a {
+            color: $miancolor;
+        }
+    }
+    ol {
+        width: 100%;
+        height: 26px;
+        border: 1px solid #eaeaea;
+        li {
+            box-sizing: content-box;
+            float: left;
+            width: 47px;
+            text-align: center;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid #eaeaea;
+            border-left: 0;
+            padding: 2px 0 1px;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+    ul {
+        width: 100%;
+        height: 510px;
+        li {
+            width: 100%;
+            height: 100%;
+            font-size: 100px;
+            background-color: #666;
+            text-align: center;
+            line-height: 200px;
+            display: none;
+        }
+    }
+    .active {
+        border-top: 3px solid #487a6f;
+        color: #487a6f;
+        margin-top: -1px;
+        padding-top: 1px;
+        border-bottom: none;
+    }
+}
