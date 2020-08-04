@@ -1,4 +1,4 @@
-define(['dropmenu', 'banner', 'autologin'], function(dp, slide, auto) {
+define(['dropmenu', 'banner', 'autologin', 'jqlazy'], function(dp, slide, auto) {
     return {
         init: function() {
             dp.init();
@@ -123,7 +123,7 @@ define(['dropmenu', 'banner', 'autologin'], function(dp, slide, auto) {
                             str += `
                             <div>
                             <a href='details.html?bid=${value.bid}'>
-                            <img src="${value.url}" alt="">
+                            <img data-original="${value.url}" alt="" class="lazy" width='200' height='200'>
                             </a>
                             <p class="title"><a href='details.html?bid=${value.bid}'>${value.title}</a></p>
                             <p class="author">${value.author}</p>
@@ -162,6 +162,9 @@ define(['dropmenu', 'banner', 'autologin'], function(dp, slide, auto) {
                 }
                 console.log(firstLi);
                 $(firstLi).appendTo($online);
+                $(function() {
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
+                });
             })
         }
     }

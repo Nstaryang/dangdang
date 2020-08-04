@@ -1,0 +1,50 @@
+footer {
+    width: 100%;
+}
+
+.pic_wrap {
+    width: 100%;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.pic_news {
+    width: 940px;
+    margin: 0 auto;
+    height: 68px;
+    padding: 5px 0 5px 30px;
+}
+
+.pic_news a {
+    display: inline-block;
+    width: 138px;
+    height: 52px;
+    background: url(http://img61.ddimg.cn/upload_img/00660/home/footer_bg.png) 0 0 no-repeat;
+    cursor: pointer;
+    margin-left: 48px;
+}
+
+.public_news {
+    width: 920px;
+    height: 140px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.public_news dl {
+    float: left;
+    margin-right: 30px;
+}
+
+dt {
+    display: block;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #323232;
+    height: 36px;
+    line-height: 36px;
+}
+
+dd {
+    padding-left: 30px;
+}

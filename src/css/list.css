@@ -1,3 +1,49 @@
+.sort {
+    width: 1216px;
+    margin: 0 auto;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #f5f5f5;
+}
+
+.sort>a {
+    padding: 0 10px;
+    border: solid 1px #efefef;
+}
+
+.sort>a:hover {
+    color: #fd5115;
+}
+
+.sort .active {
+    color: #fd5115;
+}
+
+.page {
+    width: 100px;
+    height: 24px;
+    float: right;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.page a {
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+    background: red url(../images/tools_box_bg.png) no-repeat 5px -62px;
+}
+
+.page .next {
+    background: red url(../images/tools_box_bg.png) no-repeat -7px -62px;
+}
+
+.page .curr {
+    color: #f60;
+}
+
 .list {
     width: 1216px;
     margin: 20px auto;
@@ -89,7 +135,7 @@
     color: #646464;
 }
 
-.list li p a:nth-of-type(1) {
+.list li p:nth-of-type(4) a:nth-of-type(1) {
     width: 131px;
     float: left;
     margin-left: 2px;
@@ -103,7 +149,7 @@
     background-color: #fff;
 }
 
-.list li p a:hover {
+.list li p:nth-of-type(4) a:hover {
     background-color: #fdf5f5;
     color: #ff2832;
 }
