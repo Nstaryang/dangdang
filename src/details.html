@@ -8,6 +8,7 @@
     <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="details"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/details.css">
 </head>
 
@@ -58,7 +59,7 @@
                             <a href="#">家居日用</a>
                         </div>
                     </em>
-                    <span class="fl">搜素</span>
+                    <span class="fl">搜索</span>
                 </div>
                 <p class="hot">
                     <em>热搜:</em>
@@ -67,7 +68,7 @@
                     <a href="#">长恨歌图</a>
                     <a href="#">童年</a>
                     <a href="#">高等数学</a>
-                    <a class="fr">高级搜素</a>
+                    <a class="fr">高级搜索</a>
                 </p>
             </div>
             <!-- 购物车 -->
@@ -170,7 +171,7 @@
             <h1></h1>
             <p class="intro"><span></span><a href="#">读遍十方简，更多小说每满100减40>></a></p>
             <p class="printinfo">
-                <span class="author">作者:<a href="#">马伯庸</a>著</span>
+                <span class="author">作者:<a href="#"></a> 著</span>
                 <span class="press">出版社:<a>湖南文艺出版社</a></span>
                 <span class="presstime">出版时间:<i>2020年07月</i></span>
             </p>
@@ -188,7 +189,22 @@
                 </div>
             </div>
 
-            <div class="address"><i>配&nbsp;送&nbsp;至</i><span>北京市朝阳区朝阳街道</span></div>
+            <div class="address"><i>配&nbsp;送&nbsp;至</i>
+                <div class="site">
+                    <span>北京市东城区</span>
+                    <div class="site_box">
+                        <ol>
+                            <li class="prov" data-index="0">北京</li>
+                            <li class="city" data-index="0">北京市</li>
+                            <li class="county" data-index="0">东城区</li>
+                        </ol>
+                        <ul class="prov_list"></ul>
+                        <ul class="city_list"></ul>
+                        <ul class="county_list show"></ul>
+                        <em class="close">×</em>
+                    </div>
+                </div>
+            </div>
             <p class="sever">
                 <i>服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</i>
                 <span>
@@ -203,12 +219,79 @@
                     <span class="minus unselect">-</span>
                 </div>
                 <a href="javascript:;" class="jioncart">加入购物车</a>
-                <a href="javascript:;" class="buy">立即购买</a>
+                <a href="cartlist.html" class="buy">立即购买</a>
             </div>
         </div>
     </main>
 
+    <footer>
+        <div class="pic_wrap">
+            <div class="pic_news">
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+        </div>
 
+        <div class="public_news">
+            <dl>
+                <dt><a href="javascript:;">购物指南</a></dt>
+                <dd><a href="javascript:;">购物流程</a></dd>
+                <dd><a href="javascript:;">发票制度</a></dd>
+                <dd><a href="javascript:;">服务协议</a></dd>
+                <dd><a href="javascript:;">会员优惠</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">支付方式</a></dt>
+                <dd><a href="javascript:;">网上支付</a></dd>
+                <dd><a href="javascript:;">礼品卡支付</a></dd>
+                <dd><a href="javascript:;">银行支付</a></dd>
+                <dd><a href="javascript:;">礼券支付</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">订单服务</a></dt>
+                <dd><a href="javascript:;">配送服务查询</a></dd>
+                <dd><a href="javascript:;">订单状态说明</a></dd>
+                <dd><a href="javascript:;">自助取消订单</a></dd>
+                <dd><a href="javascript:;">自助修改订单</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">配送方式</a></dt>
+                <dd><a href="javascript:;">当日递</a></dd>
+                <dd><a href="javascript:;">次日达</a></dd>
+                <dd><a href="javascript:;">订单自提</a></dd>
+                <dd><a href="javascript:;">验货与签收</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">退换货</a></dt>
+                <dd><a href="javascript:;">退换货服务查询</a></dd>
+                <dd><a href="javascript:;">自助申请退换货</a></dd>
+                <dd><a href="javascript:;">退换货进度查询</a></dd>
+                <dd><a href="javascript:;">退款方式和时间</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">商家服务</a></dt>
+                <dd><a href="javascript:;">商家中心</a></dd>
+                <dd><a href="javascript:;">运营服务</a></dd>
+                <dd><a href="javascript:;">加入尾品汇</a></dd>
+            </dl>
+        </div>
+        <div class="footer_nav_wrap">
+            <ul class="footer_nav">
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">诚聘英才</a></li>
+                <li><a href="#">网站联盟</a></li>
+                <li><a href="#">当当招商</a></li>
+                <li><a href="#">机构销售</a></li>
+                <li><a href="#">手机当当</a></li>
+                <li><a href="#">官方Blog</a></li>
+                <li><a href="#">热词搜索</a></li>
+            </ul>
+            <div class="footer_copyright"><span>Copyright © 2004 - 2020 当当网. All Rights Reserved</span>
+                <a href="#"><img src="http://img60.ddimg.cn/upload_img/00459/index/validate.gif"></a><span>京ICP证041189号</span><span class="sep">|</span><span>出版物经营许可证 新出发京批字第直0673号</span></div>
+        </div>
+    </footer>
 
 
 </body>

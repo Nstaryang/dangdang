@@ -96,7 +96,7 @@ define(['dropmenu', 'autologin', 'jqlazy'], function(dp, auto) {
                             <span>￥${value.nowprice}</span>
                             <span>定价:<i>￥${value.preprice}</i></span>
                         </p>
-                        <p><a href='details.html?bid=${value.bid}'>${value.title}</a></p>
+                        <p><a href='details.html?bid=${value.bid}' title='${value.title}'>${value.title}</a></p>
                         <p>${value.intro}</p>
                         <p>
                             <a href="cartlist.html" class='join' data-bid='${value.bid}'>加入购物车</a>

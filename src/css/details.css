@@ -7,8 +7,9 @@
 
 .details {
     width: 1216px;
-    margin: 10px auto;
+    margin: 10px auto 100px;
     position: relative;
+    overflow: hidden;
 }
 
 .picinfo {
@@ -21,6 +22,7 @@
     height: 320px;
     position: relative;
     border: 1px solid #ccc;
+    /* z-index: 10; */
 }
 
 .sf {
@@ -50,6 +52,7 @@
     overflow: hidden;
     border: 1px solid #ccc;
     visibility: hidden;
+    z-index: 2;
 }
 
 .bpic {
@@ -217,12 +220,92 @@
     text-align-last: left;
 }
 
-.address span {
+.address .site {
     display: inline-block;
     height: 32px;
     line-height: 32px;
     font-size: 12px;
     border: 1px solid #ccc;
+    position: relative;
+    background-color: #fff;
+}
+
+.address .site span {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.address .site_box {
+    width: 375px;
+    min-height: 140px;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+}
+
+.site_box ol {
+    border-bottom: 1px solid #eee;
+    padding: 5px 15px 0;
+    overflow: hidden;
+}
+
+.site_box ol li {
+    padding: 0 5px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 10px;
+    background-color: #eee;
+    float: left;
+    cursor: pointer;
+}
+
+.site_box ul {
+    width: 100%;
+    padding: 4px 0 8px 15px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.site_box .show {
+    display: flex;
+}
+
+.site_box ul li {
+    width: 80px;
+    font-size: 12px;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.site_box ul li:hover {
+    color: #fa5000;
+}
+
+.site_box ul li:nth-of-type(4n) {
+    margin-right: 0px;
+}
+
+.site_box .close {
+    height: 29px;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ccc;
 }
 
 .sever i {
@@ -239,13 +322,13 @@
     height: 32px;
     line-height: 32px;
     font-size: 12px;
-    ;
 }
 
 .buy-box {
     height: 104px;
     width: 100%;
     padding: 35px 0;
+    margin-bottom: 150px;
 }
 
 .buy-box #buy-num {

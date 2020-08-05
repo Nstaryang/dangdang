@@ -83,8 +83,6 @@ define(['autologin', 'jqcookie'], function(auto) {
 
             // 加减
             $table.on('click', 'a', function() {
-                // const $select = $table.find('input#select');
-
                 if ($(this).hasClass('add')) {
                     let index = $.inArray($(this).attr('data-bid'), arrbid);
                     let currtr = $table.find('tr').eq(index); //当前tr

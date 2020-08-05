@@ -197,10 +197,9 @@ header {
     width: 130px;
 }
 
-.shopping-list {}
-
 .shopping-list table {
     width: 100%;
+    min-height: 120px;
     border: none;
     color: #969696;
     background-color: #fafafa;

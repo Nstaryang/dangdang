@@ -118,12 +118,10 @@ define(['dropmenu', 'banner', 'autologin', 'jqlazy'], function(dp, slide, auto) 
                     let str = '';
                     $.each(data, function(index, value) {
                         if (index >= i * 8) {
-                            console.log('index=' + index);
-                            console.log("i=" + i);
                             str += `
                             <div>
                             <a href='details.html?bid=${value.bid}'>
-                            <img data-original="${value.url}" alt="" class="lazy" width='200' height='200'>
+                            <img data-original="${value.url}" alt="" class="lazy" width='150' height='150'>
                             </a>
                             <p class="title"><a href='details.html?bid=${value.bid}'>${value.title}</a></p>
                             <p class="author">${value.author}</p>
@@ -160,8 +158,43 @@ define(['dropmenu', 'banner', 'autologin', 'jqlazy'], function(dp, slide, auto) 
                     })
 
                 }
-                console.log(firstLi);
                 $(firstLi).appendTo($online);
+                $(function() {
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
+                });
+            })
+            const $list = $(".book_tegong .tab-content li");
+            console.log($list);
+            // 渲染独家特供
+            $.ajax({
+                url: 'http://10.31.163.10/dangdang/php/list.php',
+                dataType: 'json'
+            }).done(function(data) {
+                let len = $list.length;
+                console.log(data);
+                console.log(len);
+                for (let i = 0; i < len; i++) {
+                    let str = '';
+                    $.each(data, function(index, value) {
+                        str += `
+                        <div>
+                        <a href='details.html?bid=${value.bid}'>
+                            <img data-original="${value.url}" alt="" class="lazy" width='150' height='150'>
+                        </a>
+                        <p class="title"><a href='details.html?bid=${value.bid}'>${value.title}</a></p>
+                        <p class="author">${value.author}</p>
+                        <p class="price">
+                            <span class="curr">￥${value.nowprice}</span>
+                            <span class="pre">￥${value.preprice}</span>
+                        </p>
+                    </div>
+                        `;
+                        if ((index + 1) >= 10) {
+                            $list.eq(i).html(str);
+                            return false;
+                        }
+                    })
+                }
                 $(function() {
                     $("img.lazy").lazyload({ effect: "fadeIn" });
                 });

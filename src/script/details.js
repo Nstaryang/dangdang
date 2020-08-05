@@ -217,11 +217,156 @@ define(['dropmenu', 'autologin', 'jqcookie'], function(dp, auto) {
                     path: '/'
                 })
                 alert('成功加入购物车')
+            });
+            // 点击立即购买
+            $('.buy').on('click', function() {
+                getcookie();
+                if ($.inArray(bid, arrbid) === -1) {
+                    arrbid.push(bid);
+                    arrnum.push($buy_num.val());
+                    console.log(arrbid);
+                    console.log(arrnum);
+                } else {
+                    let index = $.inArray(bid, arrbid);
+                    arrnum[index] = parseInt(arrnum[index]) + parseInt($buy_num.val());
+                }
+                $.cookie('cookiebid', arrbid, {
+                    expires: 7,
+                    path: '/'
+                });
+                $.cookie('cookienum', arrnum, {
+                    expires: 7,
+                    path: '/'
+                })
             })
+
+
+            // 三级联动
+            // 获取数据
+            const $site = $(".site")
+            const $prov = $('.prov');
+            const $city = $('.city');
+            const $county = $('.county');
+            const $prov_list = $('.prov_list');
+            const $city_list = $('.city_list');
+            const $county_list = $('.county_list');
+            let provstr = '';
+            let citystr = '';
+            let countystr = '';
+            $.ajax({
+                url: 'city.json',
+                dataType: 'json'
+            }).done(function(data) {
+                $site.on('click', function() {
+                    $('.site_box').css({
+                        display: 'block',
+                    });
+                    // 渲染省
+                    reader_prov(data);
+                    // 渲染城市
+                    reader_city(data);
+                    // 渲染县区
+                    reader_county(data);
+                });
+
+                // prov点击事件
+                $prov.on('click', function() {
+                    reader_prov(data);
+                    $prov_list.addClass('show').siblings('ul').removeClass('show');
+                });
+                // city点击事件
+                $city.on('click', function() {
+                    reader_city(data);
+                    $city_list.addClass('show').siblings('ul').removeClass('show');
+                });
+                //county点击事件
+                $county.on('click', function() {
+                    reader_county(data);
+                    $county_list.addClass('show').siblings('ul').removeClass('show');
+                });
+            })
+
+            // 渲染省
+            function reader_prov(data) {
+                $.each(data, function(index, value) {
+                    provstr += '<li data-index="' + index + '">' + value.name + '</li>'
+                });
+                $prov_list.html(provstr);
+                provstr = '';
+            }
+
+            // 渲染城市
+            function reader_city(data) {
+                $.each(data[$prov.attr('data-index')].city, function(index, value) {
+                    citystr += '<li data-index="' + index + '">' + value.name + '</li>'
+                });
+                $city_list.html(citystr);
+                citystr = '';
+            }
+
+            // 渲染县区
+            function reader_county(data) {
+                $.each(data[$prov.attr('data-index')].city[$city.attr('data-index')].districtAndCounty, function(index, value) {
+                    countystr += '<li data-index="' + index + '">' + value + '</li>'
+                });
+                $county_list.html(countystr);
+                countystr = '';
+            }
+
+            // 选择省
+            $prov_list.on('click', 'li', function() {
+                $prov.html($(this).html());
+                $prov.attr({
+                    'data-index': $(this).attr('data-index')
+                })
+                $city.html('请选择');
+                $county.hide();
+                $city.click();
+            });
+            //选择城市
+            $city_list.on('click', 'li', function() {
+                $city.html($(this).html());
+                $city.attr({
+                    'data-index': $(this).attr('data-index')
+                })
+                $county.html('请选择');
+                $county.show();
+                $county.click();
+            });
+            // 选择县区
+            $county_list.on('click', 'li', function(ev) {
+                ev = ev || window.event;
+                $county.html($(this).html());
+                $county.attr({
+                    'data-index': $(this).attr('data-index')
+                })
+
+                if ($prov.html() && $city.html() && $county.html()) {
+                    let str = '';
+                    if ($prov.html() === $city.html()) {
+                        str += $prov.html() + $county.html();
+                    } else {
+                        str += $prov.html() + $city.html() + $county.html();
+                    }
+                    $('.site span').html(str);
+                    $('.site_box').css({
+                        display: 'none'
+                    });
+                    // 取消事件冒泡
+                    ev.stopPropagation();
+                }
+
+            });
+
+            //关闭三级联动框
+            $('.close').on('click', function(ev) {
+                ev = ev || window.event;
+                $('.site_box').css({
+                    display: 'none'
+                });
+                // 取消事件冒泡
+                ev.stopPropagation();
+            });
         }
-
-
-
-
     }
 })
