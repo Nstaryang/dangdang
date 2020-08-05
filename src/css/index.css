@@ -76,6 +76,11 @@ h1 {
   background-size: 100% 100%;
   text-indent: -999em;
 }
+h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .search {
   height: 62px;
@@ -315,6 +320,27 @@ h1 {
 .ad img {
   width: 100%;
   height: 100%;
+}
+
+.crumbs {
+  width: 1216px;
+  height: 24px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.crumbs a {
+  margin: 0 10px;
+}
+.crumbs a:hover {
+  color: #ff2832;
+}
+.crumbs span {
+  margin: 0 10px;
+  width: 200px;
+  overflow: hidden;
+}
+.crumbs .active {
+  color: #ff2832;
 }
 
 section {
@@ -894,6 +920,21 @@ section {
   font-size: 100px;
   background-color: #666;
   display: none;
+}
+
+.backtop {
+  width: 54px;
+  height: 54px;
+  position: fixed;
+  bottom: 150px;
+  right: 80px;
+  text-indent: -99999px;
+  background: url(../images/backtop2.png) no-repeat 0 -54px;
+  display: none;
+}
+
+.backtop:hover {
+  background: url(../images/backtop2.png) no-repeat -54px -54px;
 }
 
 footer {

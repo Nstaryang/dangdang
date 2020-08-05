@@ -164,15 +164,12 @@ define(['dropmenu', 'banner', 'autologin', 'jqlazy'], function(dp, slide, auto) 
                 });
             })
             const $list = $(".book_tegong .tab-content li");
-            console.log($list);
             // 渲染独家特供
             $.ajax({
                 url: 'http://10.31.163.10/dangdang/php/list.php',
                 dataType: 'json'
             }).done(function(data) {
                 let len = $list.length;
-                console.log(data);
-                console.log(len);
                 for (let i = 0; i < len; i++) {
                     let str = '';
                     $.each(data, function(index, value) {
@@ -198,6 +195,28 @@ define(['dropmenu', 'banner', 'autologin', 'jqlazy'], function(dp, slide, auto) 
                 $(function() {
                     $("img.lazy").lazyload({ effect: "fadeIn" });
                 });
+            })
+
+            // 回到顶部
+            $(window).on('scroll', function() {
+                    if ($(window).scrollTop() >= 300) {
+                        $('.backtop').css({
+                            display: 'block',
+                        })
+                    } else {
+                        $('.backtop').css({
+                            display: 'none',
+                        })
+                    }
+                })
+                // 点击
+            $('.backtop').on('click', function() {
+                $('html,body').animate({
+                    scrollTop: 0,
+                })
+            })
+            $(document).ready(function() {
+                $('html,body').scrollTop(0);
             })
         }
     }

@@ -30,6 +30,7 @@ define(['dropmenu', 'autologin', 'jqcookie'], function(dp, auto) {
                 $spic.attr('src', data.url);
                 $bpic.attr('src', data.url);
                 $title.html(data.title);
+                $('.crumbs .active').html(data.title);
                 $intro.html(data.intro);
                 $author.html(data.author);
                 $nowprice.html(data.nowprice);

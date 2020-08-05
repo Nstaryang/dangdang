@@ -90,7 +90,7 @@ define(['dropmenu', 'autologin', 'jqlazy'], function(dp, auto) {
                         str += `
                     <li>
                         <a href='details.html?bid=${value.bid}'>
-                        <img data-original="${value.url}" alt="${value.title}" class='lazy' width='200' height='200'>
+                        <img data-original="${value.url}" alt="${value.title}" title="${value.title}" class='lazy' width='200' height='200'>
                         </a>
                         <p>
                             <span>￥${value.nowprice}</span>

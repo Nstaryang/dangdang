@@ -7,4 +7,19 @@ section {
 
 @import 'store1';
 @import 'store2';
+.backtop {
+    width: 54px;
+    height: 54px;
+    position: fixed;
+    bottom: 150px;
+    right: 80px;
+    text-indent: -99999px;
+    background: url(../images/backtop2.png) no-repeat 0 -54px;
+    display: none;
+}
+
+.backtop:hover {
+    background: url(../images/backtop2.png) no-repeat -54px -54px;
+}
+
 @import 'footer';
