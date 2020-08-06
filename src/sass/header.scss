@@ -39,7 +39,7 @@ header {
             float: left;
             font-size: 12px;
             line-height: 36px;
-            background: url(../images/login-bar-bg.jpg) no-repeat right center;
+            background: url(../images/login_bar_bg.jpg) no-repeat right center;
             &:nth-last-of-type(1) {
                 background: none;
             }
@@ -319,7 +319,7 @@ h1 {
             font-size: 12px;
             height: 100%;
             line-height: 30px;
-            background: url(../images/submeun-bg.jpg) no-repeat right center;
+            background: url(../images/submeun_bg.jpg) no-repeat right center;
         }
         a:hover {
             color: $miancolor;

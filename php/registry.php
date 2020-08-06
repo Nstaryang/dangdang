@@ -8,6 +8,7 @@ header('Access-Control-Allow-Method:POST,GET');
         $password = sha1($_POST['password']);
         $repass = sha1($_POST['repass']);
         $conn->query("insert userinfo values(null,'$phone','$phone','$password','$repass',NOW())");
+        header("location:http://localhost/dangdang/src/index123.html");
     }
 
     if(isset($_GET['phone'])){

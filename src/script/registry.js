@@ -1,4 +1,4 @@
-define([], function() {
+define(['jqcookie'], function() {
     return {
         init: function() {
             // 表单验证
@@ -441,7 +441,14 @@ define([], function() {
                 }
                 if (!phonflag || !passwordflag || !repassflag || !yzmflag) {
                     return false;
+                }else{
+                    alert(1);
+                    $.cookie('username', $phone.val(), {
+                        expires: 7,
+                        path: '/'
+                    })
                 }
+                
             })
         }
     }

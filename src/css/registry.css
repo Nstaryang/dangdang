@@ -32,7 +32,7 @@ nav {
 
 nav li {
     float: left;
-    background: url(../images/login-bar-bg.jpg) no-repeat right bottom;
+    background: url(../images/login_bar_bg.jpg) no-repeat right bottom;
 }
 
 nav li a {
