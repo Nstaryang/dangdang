@@ -762,7 +762,6 @@ section {
 .book_tegong {
   width: 960px;
   height: 584px;
-  background-color: aqua;
   margin-bottom: 50px;
 }
 .book_tegong header {
@@ -868,7 +867,6 @@ section {
 .sell_rank {
   width: 240px;
   height: 605px;
-  background-color: pink;
   padding-top: 10px;
 }
 .sell_rank h3 {

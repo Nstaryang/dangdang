@@ -10,6 +10,7 @@ define(['dropmenu', 'autologin', 'jqlazy'], function(dp, auto) {
             const $ascent = $('.ascent');
             const $descent = $('.descent');
             let num = 1;
+            let sortType = 'z';
             const $btn_pre = $('.pre');
             const $btn_next = $('.next');
             $.ajax({
@@ -17,77 +18,84 @@ define(['dropmenu', 'autologin', 'jqlazy'], function(dp, auto) {
                 url: 'http://10.31.163.10/dangdang/php/list.php',
                 dataType: 'json'
             }).done(function(data) {
-                reader(data, num);
-                $zonghe.on('click', function() {
-                    data = data.sort(function(obj1, obj2) {
-                        return obj1.bid - obj2.bid;
-                    });
-                    $(this).addClass('active').siblings('a').removeClass('active');
-                    reader(data, num);
-                });
-                //升序
-                $ascent.on('click', function() {
-                    data = data.sort(function(obj1, obj2) {
-                        return obj1.nowprice - obj2.nowprice;
-                    })
-                    $(this).addClass('active').siblings('a').removeClass('active');
-                    reader(data, num);
-                });
-                //降序
-                $descent.on('click', function() {
-                    data = data.sort(function(obj1, obj2) {
-                        return obj2.nowprice - obj1.nowprice;
-                    })
-                    $(this).addClass('active').siblings('a').removeClass('active');
-                    reader(data, num);
-                });
+                reader(data);
                 if (num <= 1) {
                     $btn_pre.css({
                         backgroundColor: '#ccc'
                     })
                 }
                 $('.curr').html(num);
-                $('.total').html(Math.ceil(data.length / 10));
-                //下一页
-                $btn_next.on('click', function() {
-                    num++;
-                    $btn_pre.css({
-                        backgroundColor: 'red'
-                    })
-                    if (num >= Math.ceil(data.length / 10)) {
-                        num = Math.ceil(data.length / 10)
-                        $btn_next.css({
-                            backgroundColor: '#ccc'
-                        });
-                    }
-                    $('.curr').html(num);
-                    reader(data, num);
-                });
-                //上一页
-                $btn_pre.on('click', function() {
-                    num--;
-                    $btn_next.css({
-                        backgroundColor: 'red'
-                    })
-                    if (num <= 1) {
-                        num = 1;
-                        $btn_pre.css({
-                            backgroundColor: '#ccc'
-                        })
-                    }
-                    $('.curr').html(num);
-                    reader(data, num);
+            });
+
+            // 综合排序
+            $zonghe.on('click', function() {
+                sortType = 'z';
+                toReader();
+                $(this).addClass('active').siblings('a').removeClass('active');
+            });
+            //升序
+            $ascent.on('click', function() {
+                sortType = 'u';
+                toReader();
+                $(this).addClass('active').siblings('a').removeClass('active');
+            });
+            //降序
+            $descent.on('click', function() {
+                sortType = 'd';
+                toReader();
+                $(this).addClass('active').siblings('a').removeClass('active');
+            });
+
+            //下一页
+            $btn_next.on('click', function() {
+                num++;
+                toReader();
+                $btn_pre.css({
+                    backgroundColor: 'red'
                 })
+                if (num >= 3) {
+                    num = 3
+                    $btn_next.css({
+                        backgroundColor: '#ccc'
+                    });
+                }
+                $('.curr').html(num);
+            });
+            //上一页
+            $btn_pre.on('click', function() {
+                num--;
+                toReader();
+                $btn_next.css({
+                    backgroundColor: 'red'
+                })
+                if (num <= 1) {
+                    num = 1;
+                    $btn_pre.css({
+                        backgroundColor: '#ccc'
+                    })
+                }
+                $('.curr').html(num);
             })
 
+            //重新渲染
+            function toReader() {
+                $.ajax({
+                    type: 'post',
+                    url: 'http://10.31.163.10/dangdang/php/list.php',
+                    data: {
+                        page: num,
+                        sortType: sortType,
+                    },
+                    dataType: 'json'
+                }).done(function(data) {
+                    reader(data);
+                })
+            }
             // 渲染
-            function reader(data, i) {
+            function reader(data) {
                 let str = '';
                 $.each(data, function(index, value) {
-                    // <a href='http://localhost/dangdang/src/details.html?bid=${value.bid}'>
-                    // <p><a href='http://localhost/dangdang/src/details.html?bid=${value.bid}'>${value.title}</a></p>
-                    if (index >= (i - 1) * 10) {
-                        str += `
+                    str += `
                     <li>
                         <a href='details.html?bid=${value.bid}'>
                         <img data-original="${value.url}" alt="${value.title}" title="${value.title}" class='lazy' width='200' height='200'>
@@ -105,10 +113,6 @@ define(['dropmenu', 'autologin', 'jqlazy'], function(dp, auto) {
                         
                     </li>
                     `;
-                    }
-                    if ((index + 1) >= 10 * i) {
-                        return false;
-                    }
                 })
                 $listul.html(str);
                 $(function() {
